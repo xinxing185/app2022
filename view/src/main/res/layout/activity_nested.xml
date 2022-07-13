@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/header" />
+        <xyz.app.memo.view.nestedscroll.NestedScrollingParent
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/parentView">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="Fix Tab"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_red_light"
+                android:background="@android:color/darker_gray"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#555555">
+            </androidx.recyclerview.widget.RecyclerView>
+        </xyz.app.memo.view.nestedscroll.NestedScrollingParent>
+    </FrameLayout>
+</layout>

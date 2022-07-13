@@ -1,0 +1,3 @@
+rootProject.name = "AppMemo"
+include ':app'
+include ':view'
